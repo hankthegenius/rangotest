@@ -7,8 +7,13 @@
 
 {% block body_block%}
         <p>visits: {{ visits }}</p>
+        <div class="alert">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;
+            </span>
+            This is an alert box.
+        </div>
         <div>
             <a href="{% url 'index' %}">index</a>
-            <img src="{% static "images/rango.jpg" %}" alt="Picture of cats"/>
+            <img src="{% static "images/cat.jpg" %}" alt="Picture of cats"/>
         </div>
 {% endblock %}
